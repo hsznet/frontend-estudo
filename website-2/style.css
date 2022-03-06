@@ -21,13 +21,21 @@ h1 {
 }
 
 main {
-    padding: 100px;
-    margin: 0;
-    height: auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    line-height: auto;
+    padding: 100px;   
+    margin-top: 0px;
+    height: 290px;
+    max-height: 290px;
     text-align: center;
+    font-size: 50px;
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    
     margin: 0;
 }
 
@@ -53,4 +61,21 @@ footer {
 
 .itens {
     cursor:pointer;
+}
+
+a { color: inherit; } 
+
+.rodape {
+    margin-top: 20px;
+    padding: 28px;
+    border-top: 1px solid;
+    font-size: 20px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    display: flex;
+    justify-content: space-around;
+}
+
+#texto {
+    transition: opacity 1s;
 }

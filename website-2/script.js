@@ -1,6 +1,3 @@
-const element = document.querySelector('.itens');
-const style = getComputedStyle(element);
- 
 const originalSize = style.fontSize;
  
 function mouseOver(){
@@ -10,32 +7,58 @@ function mouseOver(){
 
 }
 
-function mouseClick(size){
+function mouseClickSobre(){
      
+    var bool = true;
     
-    const element = document.querySelector('.itens');
-    const style = getComputedStyle(element);
-
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
     
-    var size = style.fontSize;
+    var f = document.getElementById('texto');
     
-    size = parseInt(size);
-    var new_size = size - 10
+    if (bool == true){
+        document.addEventListener('click', function(ev){
+        f.style.opacity = 0;
+        bool = false;
     
+        
 
-    new_size = new_size.toString();
+        sleep(1000).then(() => {
+        f.style.opacity = 1;
+        bool = true;
+        f.innerHTML = "Olá, me chamo Heitor Luis Zamboni!";});
+    });}
 
-    document.getElementById("itens").style.fontSize = `${new_size}px`;
-    document.getElementById("itens").style.cursor = "pointer";
 
-    return size;
- }
+}
 
+function mouseClickStacks(){
+     
+    var bool = true;
+    
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
+    
+    var f = document.getElementById('texto');
+    
+    if (bool == true){
+        document.addEventListener('click', function(ev){
+        f.style.opacity = 0;
+        bool = false;
+    
+        
+
+        sleep(1000).then(() => {
+        f.style.opacity = 1;
+        bool = true;
+        f.innerHTML = "Para criar esse site, eu usei HTML, CSS e Javascript puros";});
+    });}
  
- 
- function mouseUp(){
+function mouseUp(){
     
     var size = mouseClick(size);
 
     document.getElementById("itens").style.fontSize = `${size}px`;
- }
+}}
