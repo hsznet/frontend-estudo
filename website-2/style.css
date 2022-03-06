@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: auto;
+    text-decoration: none;
+}
+
+body {
+    color: white;
+    font-size: 200%;
+    background: linear-gradient(80.00deg, #290000 1%  , #230031 99%) 
+}
+
+header {
+    padding: auto;
+    margin: 0px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 100%;
+}
+
+main {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    line-height: auto;
+    padding: 100px;   
+    margin-top: 0px;
+    height: 290px;
+    max-height: 290px;
+    text-align: center;
+    font-size: 50px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    
+    margin: 0;
+}
+
+.imagem {
+    margin: 10px;
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    height: 100;
+    margin: 20px;
+    padding: 15px;
+    background: linear-gradient(90.00deg, #570000 20%, #360049 80%);
+}
+
+.itens {
+    cursor:pointer;
+}
+
+a { color: inherit; } 
+
+.rodape {
+    margin-top: 20px;
+    padding: 28px;
+    border-top: 1px solid;
+    font-size: 20px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    display: flex;
+    justify-content: space-around;
+}
+
+#texto {
+    transition: opacity 1s;
+}
